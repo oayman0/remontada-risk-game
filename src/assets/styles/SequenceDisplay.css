@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-auto-rows: minmax(50px, auto); /* Minimum row height */
+    grid-gap: 10px; /* Spacing between grid items */
+    text-align: center;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Border for each grid item */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  .grid-item.header {
+    background-color: #ddd; /* Background color for header row */
+    grid-column: span 1; /* Span the full width of the grid */
+  }
+  
+  .grid-item.cell {
+    background-color: #f0f0f0; /* Default background color for grid cells */
+  }
+  
+  .grid-item.visible {
+    background-color: transparent; /* Change background color of visible items */
+  }
+  
