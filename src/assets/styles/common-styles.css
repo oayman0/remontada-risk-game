@@ -14,7 +14,9 @@ justify-content: center;
 
 .landing{
     min-height: 100vh;
-    background-color: #debea4;
+    background-color: #649781;
+    background-image: linear-gradient(220.55deg, #39a06d 0%, #053f2e 100%);
+
  
     /* background-color: #075e54; */
 }
@@ -33,7 +35,7 @@ justify-content: center;
     height: 64px;
     font-size: 24px;
     color: #fff;
-    background-color: #41505C;
+    background-color: #FFD700;
     border: none;
     border-radius: 16px;
     font-weight: 600;
@@ -42,7 +44,15 @@ justify-content: center;
 
 .answers-page{
     min-height: 100vh;
-    background-color: #debea4;
+    background-color: #649781;
+    background-image: linear-gradient(220.55deg, #39a06d 0%, #053f2e 100%);
+
+}
+.show-answers-btn{
+    height: 48px;
+    width: 150px;
+    font-size: 18px;
+
 }
 
 .answers{
@@ -56,20 +66,21 @@ justify-content: center;
 
 .input{
     font-family: 'Cairo', 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
     width: 187px;
     height: 64px;
-    font-size: 24px;
     color:  #2E4353;
     background-color:#fff;
     border: none;
     border-radius: 16px;
-    font-weight: 600;
-    text-align: center;
 }
 .title{
     font-family: 'Cairo', 'Inter',sans-serif;
     font-size: 24px;
-    color:  #2E4353;
+    color:  #FFD700;
+    color:  #141414;
     /* color:  #f7f8fa; */
     font-weight: 600;
 
@@ -88,10 +99,17 @@ ol{
 .rules{
     list-style-type: arabic-indic;
     font-family: 'Cairo', 'Inter',sans-serif;
-    color:  #1b1b1b;
+    color:  #eceaea;
     /* color:  #ffffff; */
     font-weight: 600;
     width: 250px;
     direction: rtl;
     font-size: 18px;
+}
+
+.error-message{
+color: #FFFFFF;
+font-size: 18px;
+font-family: 'Cairo', 'Inter',sans-serif;
+color:  #eceaea;
 }

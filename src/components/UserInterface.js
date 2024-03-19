@@ -68,7 +68,8 @@ const UserInterface = () => {
                                 value={unitNumber}
                                 onChange={(event) => setUnitNumber(event.target.value)}
                             />
-                            <button type='submit' className='large-btn'>عرض القائمة</button>
+                            {/* <button type='submit' className='large-btn'>عرض القائمة</button> */}
+                            <button type='submit' className='button-85 show-answers-btn'>عرض الإجابات</button>
                             {content}
                         </div>
                     </form>
@@ -87,7 +88,10 @@ const UserInterface = () => {
                 </div>
                 <div className='hero'>
                     <img src={Hero} alt='hero image' />
-                    <button className='large-btn' onClick={() => {
+                    {/* <button className='large-btn' onClick={() => {
+                        setGameHasStarted(() => (true))
+                    }}>ابدأ اللعبة</button> */}
+                    <button className='button-85' onClick={() => {
                         setGameHasStarted(() => (true))
                     }}>ابدأ اللعبة</button>
                     <div className='rules'>
@@ -95,16 +99,14 @@ const UserInterface = () => {
                     <h2 className='title'>قوانين اللعبة</h2>
                     <ol>
                         <li className='rules'>عدد الفرق 2 أو أكثر.</li>
-                        <li className='rules'>لكل لاعب فى الفريق الحق فى تخمين اسم لاعب واحد فقط فى البطاقة.</li>
-                        <li className='rules'>يتحول الدور إلى الفريق الآخر وهكذا.</li>
-                    <li className='rules'>تحتسب نقطة للفريق صاحب أكبر عدد من الإجابات الصحيحة لكل كارت.</li>
-                    <li className='rules'>المباراة من 3 نقاط.</li>
+                        <li className='rules'>يختار الفريق سؤال من الأسئلة المتبقية.</li>
+                        <li className='rules'>يربح نقاط السؤال فى حالة الإجابة الصحيحة.</li>
+                    <li className='rules'>يفوز الفريق صاحب النقاط الأكثر بعد انتهاء جميع الأسئلة.</li>
                     </ol>
-                    <h2 className='title'>طريقة اللعب</h2>
+                    <h2 className='title'>وسائل مساعدة</h2>
                     <ol >
-                        <li className='rules'>مدة تخمين أى لاعب 30 ث.</li>
-                        <li className='rules'>ينتهى دور اللاعب بعد 3 إجابات خاطئة فى نفس البطاقة.</li>
-                        <li className='rules'>ينتهى الدور بانتهاء البطاقة، أو ايقاف جميع اللاعبين بعد 3 اختيارات خاطئة.</li>
+                        <li className='rules'>الاتصال بصديق</li>
+                        <li className='rules'>إضافة وقت</li>
                     </ol>
                     </div>
 

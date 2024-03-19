@@ -119,13 +119,13 @@ const SequenceDisplay = ({ values }) => {
     <div className="grid-container">
       {/* Render the header row */}
       {headerValues.map((value, index) => (
-        <div key={index} className="grid-item header">{value}</div>
+        <div key={index} className="button-55 grid-item header ">{value}</div>
       ))}
       {/* Render the grid cells */}
       {gridValues.map((value, index) => (
         <div
           key={index + 4}
-          className={`grid-item cell ${visibleIndexes.includes(index + 4) ? 'visible' : ''}`}
+          className={`button-64 grid-item cell  ${visibleIndexes.includes(index + 4) ? 'visible' : ''}`}
           onClick={() => toggleVisibility(index + 4)}
         >
           {visibleIndexes.includes(index + 4) ? value : placeholders[Math.floor(index / 4)]}
