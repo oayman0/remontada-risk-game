@@ -125,7 +125,7 @@ const SequenceDisplay = ({ values }) => {
       {gridValues.map((value, index) => (
         <div
           key={index + 4}
-          className={`button-64 grid-item cell  ${visibleIndexes.includes(index + 4) ? 'visible' : ''}`}
+          className={`grid-item cell  ${visibleIndexes.includes(index + 4) ? 'visible button-55' : 'button-64'}`}
           onClick={() => toggleVisibility(index + 4)}
         >
           {visibleIndexes.includes(index + 4) ? value : placeholders[Math.floor(index / 4)]}
