@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 const ScoreCalculator = () => {
-  const [teamNames, setTeamNames] = useState(["لاعب 1...", "لاعب 2..."]);
+  const [teamNames, setTeamNames] = useState(["فريق 1...", "فريق 2..."]);
   const [scores, setScores] = useState(Array(2).fill(0));
   const inputRefs = useRef([]);
 
   const addTeam = () => {
     if (teamNames.length < 7) {
-      const newTeamName = `لاعب ${teamNames.length + 1}...`;
+      const newTeamName = `فريق ${teamNames.length + 1}...`;
       setTeamNames([...teamNames, newTeamName]);
       setScores([...scores, 0]);
     }
@@ -68,7 +68,7 @@ const ScoreCalculator = () => {
       </div>
 
       <div className="buttons-container">
-        <button className='button-85' onClick={addTeam}>إضافة لاعب</button>
+        <button className='button-85' onClick={addTeam}>إضافة فريق</button>
         {/* <button className='button-85' onClick={() => setScores(Array(teamNames.length).fill(0))}>حذف النقاط</button> */}
       </div>
 
