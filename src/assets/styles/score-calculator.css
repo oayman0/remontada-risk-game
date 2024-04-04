@@ -1,0 +1,182 @@
+.score-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: auto; /* Each column will be as wide as its content */
+  gap: 10px;
+}
+
+.score-item {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  gap: 10px;
+  padding: 5px 15px 15px 15px;
+  cursor:default;
+  background-color: #ddd;
+  font-size: 18px;
+  font-family: 'Cairo', 'Inter',sans-serif;
+  direction: rtl; /* Right-to-left arrangement */
+}
+
+.score-name{
+  width: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.score-display{
+  font-size: 26px;
+  margin-right: 20px;
+}
+.trash-icon{
+margin-right: auto;
+ 
+}
+.score-item input {
+  width: 100px;
+  border: none;
+  font-family: 'Cairo', 'Inter',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+.score-buttons {
+  width: 100%; 
+  display:flex; /* Nested grid for buttons */
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: flex-start;  
+}
+
+.score-buttons .button-64 {
+  background-image: linear-gradient(142.78deg, #FC887B -22.92%, #FFDD95 122.49%);
+  background-image: linear-gradient(rgb(253, 220, 53), rgb(254, 237, 154));
+
+  
+  color: #0e0d0d;
+  min-width: 20px;
+  font-family: 'Cairo', 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 1px solid #777777;
+}
+
+
+
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.buttons-container button {
+  cursor: pointer;
+  height: 48px;
+  width: 150px;
+  font-size: 18px;
+  font-family: 'Cairo', 'Inter',sans-serif;
+}
+
+
+
+/* CSS */
+.button-14 {
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px 12px;
+  min-width: 2em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-14-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  padding: 8px 16px;
+  transform: translateY(0);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, .25);
+  transition-property: transform;
+  transition-duration: .2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button-14:active .button-14-top {
+  transform: translateY(6px);
+}
+
+.button-14-top::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  background-image: radial-gradient(#cd3f64, #9d3656);
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);
+  transition-property: border-radius, padding, width, transform;
+  transition-duration: .2s;
+}
+
+.button-14:active .button-14-top::after {
+  border-radius: 6px;
+  padding: 0 2px;
+}
+
+.button-14-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 8px / 16px 16px 8px 8px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  box-sizing: content-box;
+  background-color: #803;
+  background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);
+  transition-property: border-radius, padding-top;
+  transition-duration: .2s;
+}
+
+.button-14:active .button-14-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
+}
+
+.button-14-base {
+  position: absolute;
+  z-index: -2;
+  top: 4px;
+  left: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .75), inset 0 2px 2px rgba(0, 0, 0, .25);
+}

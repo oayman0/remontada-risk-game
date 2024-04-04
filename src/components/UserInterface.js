@@ -4,6 +4,7 @@ import SequenceDisplay from './SequenceDisplay2';
 import data from '../data.json';
 import Hero from '../assets/images/hero.png'
 import Logo from '../assets/images/logo.png'
+import ScoreCalculator from './ScoreCalculator';
 // import successSoundFile from "../assets/audio/music.mp3";
 
 const UserInterface = () => {
@@ -36,7 +37,9 @@ const UserInterface = () => {
             const unitValues = data[number];
 
             if (unitValues) {
-                setContent(<SequenceDisplay values={unitValues} />);
+                setContent(<SequenceDisplay values={unitValues} />
+                
+                );
             } else {
                 setContent(
                     <p className="error-message">عفوًا هذه البطاقة غير متوفرة </p>
