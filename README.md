@@ -13,9 +13,9 @@ Check out the live demo of Remontada Bank Game hosted at
 [https://remontada-risk.onrender.com/](https://remontada-risk.onrender.com/)
 
 ## Screenshots
-![Remontada Risk](https://github.com/oayman0/remontada-risk-game/assets/37955772/27f0e981-5388-4065-9e1f-8a695d9e5dd9)
 
-![WhatsApp Image 2024-07-07 at 3 59 55 AM](https://github.com/oayman0/remontada-risk-game/assets/37955772/eb32b2c0-f656-407d-83a1-8eaa4118e5e0)
+![Remon222tada Risk copy](https://github.com/oayman0/remontada-risk-game/assets/37955772/e5d848c7-53bf-4c18-b338-64138d284de9)
+
 
 
 ## Features
